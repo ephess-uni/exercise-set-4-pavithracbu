@@ -16,7 +16,7 @@ def get_shutdown_events(logfile):
     sd_list = []
     with open(logfile) as log_file:
         for line in log_file:
-            if "shutdown initiated" in line:
+            if "Shutdown initiated" in line:
                 sd_list.append(line.strip())
     return sd_list
     
